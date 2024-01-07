@@ -3,7 +3,9 @@ import './App.css';
 function App() {
   return (
     <div>
-      ComfortCrafters
+      <h1 className="text-3xl font-bold underline">
+        ComfortCrafters
+      </h1>
     </div>
   );
 }
