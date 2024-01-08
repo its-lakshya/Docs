@@ -1,11 +1,10 @@
 import './App.css';
+import Home from './components/allComponents/Home';
 
 function App() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">
-        ComfortCrafters
-      </h1>
+      <Home/>
     </div>
   );
 }
