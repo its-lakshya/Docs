@@ -8,6 +8,9 @@ module.exports = withMT({
         inter : ["Inter"],
         petitFormal : ["Petit Formal Script"],
         russonOne : ["Russon One"]
+      },
+      colors:{
+        dark:"#0d1117",
       }
     },
   },
