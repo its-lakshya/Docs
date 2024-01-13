@@ -5,9 +5,26 @@ import { Link } from "react-scroll";
 import { navbar } from "@material-tailwind/react";
 
 const Navbar = () => {
+  const [scroll, setScroll] = useState();
+  const handleScroll = () => {
+    if(window.scrollY > 50){
+      setScroll(true)
+    }
+    else {
+      setScroll(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll());
+    return () => {
+      window.removeEventListener("scroll", handleScroll());
+    }
+  },[scroll])
   return (
     <div>
-      <div>
+      <div className= {scroll ? "h-16 w-full fixed flex transition items-center ease-in-out duration-500 bg-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-55 z-20" 
+      : "bg-transparent h-16 w-full fixed transition ease-in-out duration-500 flex items-center z-20"}>
         <div className="grid grid-cols-2 justify-items-center items-center content-center w-full">
           <div>
             <img className="h-10" src={logo} alt="logo-img"></img>
