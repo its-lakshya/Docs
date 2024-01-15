@@ -22,6 +22,7 @@ const Navbar = () => {
   }, [scroll]);
   return (
     <div>
+      
       <div
         className={
           scroll
