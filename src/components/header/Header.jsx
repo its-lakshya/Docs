@@ -9,6 +9,7 @@ const Header = () => {
           <Switch defaultChecked />
           <h1 className="text-5xl font-russonOne font-medium no-underline align-middle tracking-wide normal-case leading-normal text-dark">
             Axel Brand new{" "}
+            
             <span className="text-dark font-petitFormal font-bold">
               {" "}
               Furniture
