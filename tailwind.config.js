@@ -4,14 +4,6 @@ module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      FontFamily: {
-        inter : ["Inter"],
-        petitFormal : ["Petit Formal Script"],
-        russonOne : ["Russon One"]
-      },
-      colors:{
-        dark:"#0d1117",
-      }
     },
   },
   plugins: [],
