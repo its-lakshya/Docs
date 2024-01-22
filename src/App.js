@@ -1,10 +1,10 @@
 import './App.css';
+import Background from './components/Background';
 
 function App() {
   return (
-    <div>
-      
-      hello
+    <div className='relative w-full h-screen bg-gray-900'>
+      <Background/>
     </div>
   );
 }
