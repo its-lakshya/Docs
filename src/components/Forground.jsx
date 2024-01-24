@@ -5,6 +5,7 @@ function Forground() {
   return (
     <div className='fixed w-full h-full top-0 left-0 z-[3]'>
         <Cards/>
+        
     </div>
   )
 }
