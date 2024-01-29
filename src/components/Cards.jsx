@@ -14,7 +14,9 @@ const Cards = ({data, reference}) => {
     dragElastic={0.1}
     dragTransition={{bounceStiffness: 100, bounceDamping: 30}}
     className='relative w-60 h-72 rounded-[45px] bg-black/60 text-white px-8 py-10 overflow-hidden'>
+      
       <FaRegFileAlt/>
+
       <p className='text-sm leading-tight mt-5 font-semibold'>{data.desc}</p>
       <div className='absolute bottom-0 left-0 w-full'>
         <div className='flex items-center justify-between mb-3 py-3 px-8'>
@@ -23,6 +25,7 @@ const Cards = ({data, reference}) => {
             {data.close ? <IoCloseSharp/> : <FiDownload/>}
           </span>
         </div>
+
         {data.tag.isOpen ? (
           <div className={`w-full py-4 ${data.tag.tagColor === "blue" ? 'bg-light-blue-200' : "bg-green-500"} flex items-center justify-center`}>
           <h3 className='text-md'>{data.tag.tagTitle} </h3>
