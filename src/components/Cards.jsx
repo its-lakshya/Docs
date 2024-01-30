@@ -7,6 +7,7 @@ import {motion} from "framer-motion"
 
 const Cards = ({data, reference}) => {
   return (
+
     <motion.div 
     drag
     dragConstraints={reference}
@@ -33,7 +34,9 @@ const Cards = ({data, reference}) => {
         ) : null}
         
       </div>
+      
     </motion.div>
+
   )
 }
 
